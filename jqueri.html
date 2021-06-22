@@ -13,6 +13,7 @@
 <br>
 <br>
 <center><button>dugme</button></center>
+<h2></h2>
 </body>
 
 </html>
@@ -22,6 +23,11 @@
 $(document).ready(function(){
 	$('button').click(function(){
 		$('h1').css('color','green');
+	});
+	$('#novodugme').click(function(){
+		$("sadrzaj.php",function(data){
+			$('h2').html("<center>"+data+"</center>");
+		});
 	});
 });
 </script>
